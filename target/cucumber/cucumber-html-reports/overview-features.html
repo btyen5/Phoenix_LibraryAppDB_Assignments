@@ -50,11 +50,11 @@ $(document).ready(function() {
     var chartData = {
         datasets: [{
             data: [
-                6,
+                25,
                 0,
-                37,
                 0,
-                9
+                0,
+                0
             ],
             backgroundColor: [
                 "#00B000",
@@ -93,7 +93,7 @@ $(document).ready(function() {
                         var allData = data.datasets[tooltipItem.datasetIndex].data;
                         var tooltipLabel = data.labels[tooltipItem.index];
                         var tooltipData = allData[tooltipItem.index];
-                        var tooltipPercentage = Math.round(10000 * tooltipData / 52) / 100;
+                        var tooltipPercentage = Math.round(10000 * tooltipData / 25) / 100;
                         return tooltipLabel + ": " + tooltipData + " (" + tooltipPercentage + "%)";
                     }
                 }
@@ -106,8 +106,8 @@ $(document).ready(function() {
     var chartData = {
         datasets: [{
             data: [
-                1,
-                9
+                3,
+                0
             ],
             backgroundColor: [
                 "#00B000",
@@ -140,7 +140,7 @@ $(document).ready(function() {
                         var allData = data.datasets[tooltipItem.datasetIndex].data;
                         var tooltipLabel = data.labels[tooltipItem.index];
                         var tooltipData = allData[tooltipItem.index];
-                        var tooltipPercentage = Math.round(10000 * tooltipData / 10) / 100;
+                        var tooltipPercentage = Math.round(10000 * tooltipData / 3) / 100;
                         return tooltipLabel + ": " + tooltipData + " (" + tooltipPercentage + "%)";
                     }
                 }
@@ -153,8 +153,8 @@ $(document).ready(function() {
     var chartData = {
         datasets: [{
             data: [
-                   0,
-                   8
+                   2,
+                   0
                ],
                backgroundColor: [
                 "#00B000",
@@ -187,7 +187,7 @@ $(document).ready(function() {
                         var allData = data.datasets[tooltipItem.datasetIndex].data;
                         var tooltipLabel = data.labels[tooltipItem.index];
                         var tooltipData = allData[tooltipItem.index];
-                        var tooltipPercentage = Math.round(10000 * tooltipData / 8) / 100;
+                        var tooltipPercentage = Math.round(10000 * tooltipData / 2) / 100;
                         return tooltipLabel + ": " + tooltipData + " (" + tooltipPercentage + "%)";
                     }
                 }
@@ -228,7 +228,7 @@ $(document).ready(function() {
   <tbody>
     <tr class="info">
       <td>No Name (add projectName to cucumber-reporting.properties)</td>
-      <td>07 Aug 2023, 18:22</td>
+      <td>10 Aug 2023, 10:34</td>
     </tr>
   </tbody>
 </table>
@@ -323,173 +323,71 @@ $(document).ready(function() {
 
   <tbody>
       <tr>
-        <td class="tagname"><a href="report-feature_141011500.html">As a data consumer, I want to know genre of books are being borrowed the most</a></td>
+        <td class="tagname"><a href="report-feature_457114627.html">Books module</a></td>
 
-        <td      class="passed"    >1</td>
+        <td      class="passed"    >22</td>
         <td >0</td>
-        <td     class="skipped"   >1</td>
         <td >0</td>
-        <td   class="undefined" >1</td>
-        <td class="total">3</td>
+        <td >0</td>
+        <td >0</td>
+        <td class="total">22</td>
 
+        <td  class="passed"    >2</td>
         <td >0</td>
-        <td  class="failed"    >1</td>
-        <td class="total">1</td>
+        <td class="total">2</td>
 
-        <td class="duration" data-value="3989000">0.003</td>
-        <td class="failed">Failed</td>
+        <td class="duration" data-value="13067107000">13.067</td>
+        <td class="passed">Passed</td>
       </tr>
       <tr>
         <td class="tagname"><a href="report-feature_1_3287904602.html">As a data consumer, I want the user information are stored in mySql DB correctly in users table.</a></td>
 
-        <td      class="passed"    >4</td>
+        <td      class="passed"    >3</td>
         <td >0</td>
-        <td     class="skipped"   >1</td>
         <td >0</td>
-        <td   class="undefined" >1</td>
-        <td class="total">6</td>
+        <td >0</td>
+        <td >0</td>
+        <td class="total">3</td>
 
         <td  class="passed"    >1</td>
-        <td  class="failed"    >1</td>
-        <td class="total">2</td>
-
-        <td class="duration" data-value="314000">0.000</td>
-        <td class="failed">Failed</td>
-      </tr>
-      <tr>
-        <td class="tagname"><a href="report-feature_2_1480450139.html">As a librarian, I want to know borrowed books number</a></td>
-
         <td >0</td>
-        <td >0</td>
-        <td     class="skipped"   >2</td>
-        <td >0</td>
-        <td   class="undefined" >1</td>
-        <td class="total">3</td>
-
-        <td >0</td>
-        <td  class="failed"    >1</td>
         <td class="total">1</td>
 
-        <td class="duration" data-value="1117000">0.001</td>
-        <td class="failed">Failed</td>
-      </tr>
-      <tr>
-        <td class="tagname"><a href="report-feature_3_3967962972.html">As a data consumer, I want UI and DB book categories are match.</a></td>
-
-        <td >0</td>
-        <td >0</td>
-        <td     class="skipped"   >3</td>
-        <td >0</td>
-        <td   class="undefined" >1</td>
-        <td class="total">4</td>
-
-        <td >0</td>
-        <td  class="failed"    >1</td>
-        <td class="total">1</td>
-
-        <td class="duration" data-value="671000">0.000</td>
-        <td class="failed">Failed</td>
-      </tr>
-      <tr>
-        <td class="tagname"><a href="report-feature_4_2160508509.html">As a data consumer, I want UI and DB book information are match.</a></td>
-
-        <td >0</td>
-        <td >0</td>
-        <td     class="skipped"   >4</td>
-        <td >0</td>
-        <td   class="undefined" >1</td>
-        <td class="total">5</td>
-
-        <td >0</td>
-        <td  class="failed"    >1</td>
-        <td class="total">1</td>
-
-        <td class="duration" data-value="174000">0.000</td>
-        <td class="failed">Failed</td>
-      </tr>
-      <tr>
-        <td class="tagname"><a href="report-feature_5_353054046.html">As a data consumer, I want to know genre of books are being borrowed the most</a></td>
-
-        <td      class="passed"    >1</td>
-        <td >0</td>
-        <td     class="skipped"   >1</td>
-        <td >0</td>
-        <td   class="undefined" >1</td>
-        <td class="total">3</td>
-
-        <td >0</td>
-        <td  class="failed"    >1</td>
-        <td class="total">1</td>
-
-        <td class="duration" data-value="95000">0.000</td>
-        <td class="failed">Failed</td>
-      </tr>
-      <tr>
-        <td class="tagname"><a href="report-feature_6_2840566879.html">Books module</a></td>
-
-        <td >0</td>
-        <td >0</td>
-        <td     class="skipped"   >20</td>
-        <td >0</td>
-        <td   class="undefined" >2</td>
-        <td class="total">22</td>
-
-        <td >0</td>
-        <td  class="failed"    >2</td>
-        <td class="total">2</td>
-
-        <td class="duration" data-value="742000">0.000</td>
-        <td class="failed">Failed</td>
-      </tr>
-      <tr>
-        <td class="tagname"><a href="report-feature_7_1033112416.html">Books module</a></td>
-
-        <td >0</td>
-        <td >0</td>
-        <td     class="skipped"   >5</td>
-        <td >0</td>
-        <td   class="undefined" >1</td>
-        <td class="total">6</td>
-
-        <td >0</td>
-        <td  class="failed"    >1</td>
-        <td class="total">1</td>
-
-        <td class="duration" data-value="324000">0.000</td>
-        <td class="failed">Failed</td>
+        <td class="duration" data-value="153282000">0.153</td>
+        <td class="passed">Passed</td>
       </tr>
   </tbody>
 
   <tfoot class="total">
     <tr>
       <td></td>
-      <td>6</td>
+      <td>25</td>
       <td>0</td>
-      <td>37</td>
       <td>0</td>
-      <td>9</td>
-      <td>52</td>
+      <td>0</td>
+      <td>0</td>
+      <td>25</td>
 
-      <td>1</td>
-      <td>9</td>
-      <td>10</td>
+      <td>3</td>
+      <td>0</td>
+      <td>3</td>
 
-      <td class="duration">0.007</td>
-      <td>8</td>
+      <td class="duration">13.220</td>
+      <td>2</td>
     </tr>
     <tr>
       <td></td>
-      <td>11.54%</td>
+      <td>100.00%</td>
       <td>0.00%</td>
-      <td>71.15%</td>
       <td>0.00%</td>
-      <td>17.31%</td>
-      <td></td>
-      <td>10.00%</td>
-      <td>90.00%</td>
-      <td></td>
-      <td></td>
       <td>0.00%</td>
+      <td>0.00%</td>
+      <td></td>
+      <td>100.00%</td>
+      <td>0.00%</td>
+      <td></td>
+      <td></td>
+      <td>100.00%</td>
     </tr>
   </tfoot>
 </table>
