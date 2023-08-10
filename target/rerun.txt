@@ -1,8 +1,0 @@
-file:src/test/resources/features/us04.feature:4
-file:src/test/resources/features/Bonnie_US05.feature:3
-file:src/test/resources/features/us05.feature:4
-file:src/test/resources/features/us07.feature:5
-file:src/test/resources/features/us06.feature:19:20
-file:src/test/resources/features/us02.feature:4
-file:src/test/resources/features/us01.feature:10
-file:src/test/resources/features/us03.feature:4
