@@ -74,7 +74,7 @@ $(document).ready(function() {
   <tbody>
     <tr class="info">
       <td>No Name (add projectName to cucumber-reporting.properties)</td>
-      <td>11 Aug 2023, 09:41</td>
+      <td>11 Aug 2023, 10:00</td>
     </tr>
   </tbody>
 </table>
@@ -127,19 +127,19 @@ $(document).ready(function() {
         <tbody>
         <tr>
           <td class="tagname">@db</td>
+          <td      class="passed"    >4</td>
           <td >0</td>
-          <td      class="failed"    >1</td>
-          <td     class="skipped"   >3</td>
+          <td >0</td>
           <td >0</td>
           <td >0</td>
           <td class="total">4</td>
 
+          <td  class="passed"    >1</td>
           <td >0</td>
-          <td  class="failed"    >1</td>
           <td class="total">1</td>
 
-          <td class="duration" data-value="30166331900">30.166</td>
-          <td class="failed">Failed</td>
+          <td class="duration" data-value="7847441600">7.847</td>
+          <td class="passed">Passed</td>
         </tr>
         </tbody>
 
@@ -178,16 +178,17 @@ $(document).ready(function() {
 <div class="tags indention">
     <b>Tags:</b>
        <a href="report-tag_4089071939.html">@senai</a>
+       <a href="report-tag_2147548883.html">@ui</a>
        <a href="report-tag_2147548349.html">@db</a>
 </div>
 
 
-  <span class="lead-duration duration">30.166</span>
+  <span class="lead-duration duration">7.847</span>
 
 
-  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-1">
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-1">
 
-<div class="brief failed">
+<div class="brief passed">
   <span class="keyword indention">Scenario</span>
   <span class="name">verify book categories with DB</span>
 
@@ -198,7 +199,7 @@ $(document).ready(function() {
   </span>
   <div class="description indention"></div>
 
-  <div id="element-1" class="collapse collapsable-details  in ">
+  <div id="element-1" class="collapse collapsable-details ">
 
 
   <div class="inner-level hooks-element-before">
@@ -220,7 +221,23 @@ $(document).ready(function() {
             <span class="keyword indention">Before</span>
               <span class="location name">com.library.steps.Hooks.setupDB()</span>
 
-  <span class="lead-duration duration">5.430</span>
+  <span class="lead-duration duration">1.796</span>
+
+          </div>
+
+
+
+
+
+
+
+        </div>
+        <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">Before</span>
+              <span class="location name">com.library.steps.Hooks.setUp()</span>
+
+  <span class="lead-duration duration">8.345</span>
 
           </div>
 
@@ -237,9 +254,9 @@ $(document).ready(function() {
 
 
 <div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-3">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-3">
 
-<div class="brief failed">
+<div class="brief passed">
   <span class="keyword indention">Steps</span>
   <span class="name"></span>
 
@@ -249,15 +266,15 @@ $(document).ready(function() {
 
   </div>
 
-  <div id="steps-3" class="inner-level collapse collapsable-details  in ">
+  <div id="steps-3" class="inner-level collapse collapsable-details ">
       <div class="step">
 
 
-<div class="brief step-name-Given failed">
+<div class="brief step-name-Given passed">
   <span class="keyword indention">Given</span>
   <span class="name">the <span class="argument">&quot;librarian&quot;</span> on the home page</span>
 
-  <span class="lead-duration duration">30.147</span>
+  <span class="lead-duration duration">3.864</span>
 
 </div>
 
@@ -265,46 +282,6 @@ $(document).ready(function() {
 
 
 
-
-  <div class="inner-level">
-    <div class="message indention">
-      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-4">
-          <a>org.openqa.selenium.NoSuchElementException:</a>
-      </div>
-      <div id="msg-4" class="collapse collapsable-details  in ">
-        <pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#inputEmail&quot;}
-  (Session info: chrome=115.0.5790.171)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'LAPTOP-9P5QJ0O3', ip: '192.168.0.41', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.12'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 115.0.5790.171, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\simos\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:65472}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 77483c7b4fce8dc2b2c5756ff6d52c42
-*** Element info: {Using=id, value=inputEmail}
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
-	at org.openqa.selenium.By$ById.findElement(By.java:188)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy21.sendKeys(Unknown Source)
-	at com.library.pages.LoginPage.login(LoginPage.java:33)
-	at com.library.steps.Jawid_us06StepDefs.the_on_the_home_page(Jawid_us06StepDefs.java:22)
-	at &#10045;.the &quot;librarian&quot; on the home page(file:///C:/Users/simos/IdeaProjects/Phoenix_LibraryAppDB_Assignments/src/test/resources/features/Senai03.feature:5)
-</pre>
-      </div>
-    </div>
-  </div>
 
 
 
@@ -320,11 +297,11 @@ Session ID: 77483c7b4fce8dc2b2c5756ff6d52c42
       <div class="step">
 
 
-<div class="brief step-name-When skipped">
+<div class="brief step-name-When passed">
   <span class="keyword indention">When</span>
   <span class="name">user navigates to <span class="argument">&quot;Books&quot;</span> page</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">3.186</span>
 
 </div>
 
@@ -347,11 +324,11 @@ Session ID: 77483c7b4fce8dc2b2c5756ff6d52c42
       <div class="step">
 
 
-<div class="brief step-name-And skipped">
+<div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
   <span class="name">the user clicks book categories</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.667</span>
 
 </div>
 
@@ -374,11 +351,11 @@ Session ID: 77483c7b4fce8dc2b2c5756ff6d52c42
       <div class="step">
 
 
-<div class="brief step-name-Then skipped">
+<div class="brief step-name-Then passed">
   <span class="keyword indention">Then</span>
   <span class="name">verify book categories must match book_categories table from db</span>
 
-  <span class="lead-duration duration">0.018</span>
+  <span class="lead-duration duration">0.128</span>
 
 </div>
 
@@ -405,7 +382,7 @@ Session ID: 77483c7b4fce8dc2b2c5756ff6d52c42
 
 
   <div class="inner-level hooks-element-after">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-5">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-4">
 
 <div class="brief passed">
   <span class="keyword indention">Hooks</span>
@@ -417,13 +394,29 @@ Session ID: 77483c7b4fce8dc2b2c5756ff6d52c42
 
     </div>
 
-    <div id="after-5" class="inner-level collapse collapsable-details ">
+    <div id="after-4" class="inner-level collapse collapsable-details ">
+        <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">After</span>
+              <span class="location name">com.library.steps.Hooks.tearDown(io.cucumber.java.Scenario)</span>
+
+  <span class="lead-duration duration">1.161</span>
+
+          </div>
+
+
+
+
+
+
+
+        </div>
         <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">After</span>
               <span class="location name">com.library.steps.Hooks.destroyDB()</span>
 
-  <span class="lead-duration duration">0.004</span>
+  <span class="lead-duration duration">0.002</span>
 
           </div>
 
