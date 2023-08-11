@@ -48,32 +48,32 @@ $(document).ready(function() {
 $(document).ready(function() {
 
     var chartData = {
-        labels:  [ "@db",  "@ui",  "@wip", ] ,
+        labels:  [ "@db",  "@senai", ] ,
         datasets: [
             {
                 label: "Passed",
                 backgroundColor: "#92DD96",
-                data:  [ 100.00,  100.00,  100.00, ] 
+                data:  [ 0.00,  0.00, ] 
             },
             {
                 label: "Failed",
                 backgroundColor: "#F2928C",
-                data:  [ 0.00,  0.00,  0.00, ] 
+                data:  [ 25.00,  25.00, ] 
             },
             {
                 label: "Skipped",
                 backgroundColor: "#8AF",
-                data:  [ 0.00,  0.00,  0.00, ] 
+                data:  [ 75.00,  75.00, ] 
             },
             {
                 label: "Pending",
                 backgroundColor: "#F5F28F",
-                data:  [ 0.00,  0.00,  0.00, ] 
+                data:  [ 0.00,  0.00, ] 
             },
             {
                 label: "Undefined",
                 backgroundColor: "#F5B975",
-                data:  [ 0.00,  0.00,  0.00, ] 
+                data:  [ 0.00,  0.00, ] 
             }
         ]
     };
@@ -133,7 +133,7 @@ $(document).ready(function() {
   <tbody>
     <tr class="info">
       <td>No Name (add projectName to cucumber-reporting.properties)</td>
-      <td>10 Aug 2023, 10:34</td>
+      <td>11 Aug 2023, 09:41</td>
     </tr>
   </tbody>
 </table>
@@ -197,86 +197,69 @@ $(document).ready(function() {
       <tr>
         <td class="tagname"><a href="report-tag_2147548349.html">@db</a></td>
 
-        <td      class="passed"    >24</td>
+        <td >0</td>
+        <td      class="failed"    >1</td>
+        <td     class="skipped"   >3</td>
         <td >0</td>
         <td >0</td>
-        <td >0</td>
-        <td >0</td>
-        <td class="total">24</td>
+        <td class="total">4</td>
 
-        <td  class="passed"    >3</td>
         <td >0</td>
-        <td class="total">3</td>
+        <td  class="failed"    >1</td>
+        <td class="total">1</td>
 
-        <td class="duration" data-value="13220132000">13.220</td>
-        <td class="passed">Passed</td>
+        <td class="duration" data-value="30166331900">30.166</td>
+        <td class="failed">Failed</td>
       </tr>
       <tr>
-        <td class="tagname"><a href="report-tag_2147548883.html">@ui</a></td>
+        <td class="tagname"><a href="report-tag_4089071939.html">@senai</a></td>
 
-        <td      class="passed"    >24</td>
+        <td >0</td>
+        <td      class="failed"    >1</td>
+        <td     class="skipped"   >3</td>
         <td >0</td>
         <td >0</td>
-        <td >0</td>
-        <td >0</td>
-        <td class="total">24</td>
+        <td class="total">4</td>
 
-        <td  class="passed"    >3</td>
         <td >0</td>
-        <td class="total">3</td>
+        <td  class="failed"    >1</td>
+        <td class="total">1</td>
 
-        <td class="duration" data-value="13220132000">13.220</td>
-        <td class="passed">Passed</td>
-      </tr>
-      <tr>
-        <td class="tagname"><a href="report-tag_2149507997.html">@wip</a></td>
-
-        <td      class="passed"    >24</td>
-        <td >0</td>
-        <td >0</td>
-        <td >0</td>
-        <td >0</td>
-        <td class="total">24</td>
-
-        <td  class="passed"    >3</td>
-        <td >0</td>
-        <td class="total">3</td>
-
-        <td class="duration" data-value="13220132000">13.220</td>
-        <td class="passed">Passed</td>
+        <td class="duration" data-value="30166331900">30.166</td>
+        <td class="failed">Failed</td>
       </tr>
   </tbody>
 
   <tfoot class="total">
     <tr>
       <td></td>
-      <td>72</td>
+      <td>0</td>
+      <td>2</td>
+      <td>6</td>
       <td>0</td>
       <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>72</td>
+      <td>8</td>
 
-      <td>9</td>
       <td>0</td>
-      <td>9</td>
+      <td>2</td>
+      <td>2</td>
 
-      <td class="duration">39.660</td>
-      <td>3</td>
+      <td class="duration">1:0.332</td>
+      <td>2</td>
     </tr>
     <tr>
       <td></td>
-      <td>100.00%</td>
       <td>0.00%</td>
-      <td>0.00%</td>
+      <td>25.00%</td>
+      <td>75.00%</td>
       <td>0.00%</td>
       <td>0.00%</td>
       <td></td>
-      <td>100.00%</td>
       <td>0.00%</td>
-      <td></td>
-      <td></td>
       <td>100.00%</td>
+      <td></td>
+      <td></td>
+      <td>0.00%</td>
     </tr>
   </tfoot>
 </table>
