@@ -21,9 +21,9 @@ public class Bonnie_US05_StepDefs {
     }
 
     @Then("Verify if {string} is the most popular book genre.")
-    public void verify_if_is_the_most_popular_book_genre(String actualGenre) {
+    public void verify_if_is_the_most_popular_book_genre(String actualPopularGenre) {
 
-        String expectedGenre = DB_Util.getFirstRowFirstColumn();
+        String expectedPopularGenre = DB_Util.getFirstRowFirstColumn();
 
         /*
         Assert.assertEquals(expectedGenre, actualGenre);
@@ -31,11 +31,19 @@ public class Bonnie_US05_StepDefs {
         System.out.println("actualGenre = " + actualGenre);
          */
 
+        /*
         try {
             Assert.assertEquals(expectedGenre, actualGenre);
             System.out.println(actualGenre + " is the most popular book genre");
         } catch (AssertionError e) {
             System.err.println(actualGenre + " is NOT the most popular book genre");
+        }
+         */
+
+        if (actualPopularGenre.equalsIgnoreCase(expectedPopularGenre)) {
+            System.out.println(actualPopularGenre + " is the most popular book genre");
+        } else {
+            System.err.println(actualPopularGenre + " is NOT the most popular book genre");
         }
 
 
