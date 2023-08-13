@@ -16,26 +16,26 @@ public class Khalil_US07_StepDefs {
 
     BookPage bookPage = new BookPage();
     String bookName;
-    @Given("the user searches for {string} book")
+    @Given("the user searches for {string} bookk")
     public void the_user_searches_for_book(String name) {
         bookName = name;
         bookPage.search.sendKeys(bookName);
     }
 
-    @When("the user clicks Borrow Book")
+    @When("the user clicks Borrow Bookk")
     public void the_user_clicks_borrow_book() {
         bookPage.borrowBook(bookName).click();
         BrowserUtil.waitFor(2);
     }
 
-    @Then("verify that book is shown in {string} page")
+    @Then("verify that book is shown in {string} pagek")
     public void verify_that_book_is_shown_in_page(String module) {
         BorrowedBooksPage borrowedBooksPage = new BorrowedBooksPage();
         new DashBoardPage().navigateModule(module);
         Assert.assertTrue(BrowserUtil.getElementsText(borrowedBooksPage.allBorrowedBooksName).contains(bookName));
     }
 
-    @Then("verify logged student has same book in database")
+    @Then("verify logged student has same book in databasek")
     public void verify_logged_student_has_same_book_in_database() {
         String query = "select name from books b\n" +
                 "join book_borrow bb on b.id = bb.book_id\n" +
