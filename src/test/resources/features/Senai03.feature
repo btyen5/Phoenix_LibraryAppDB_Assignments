@@ -1,6 +1,6 @@
-@senai @ui @db
-Feature: As a data consumer, I want UI and DB book categories are match.
 
+Feature: As a data consumer, I want UI and DB book categories are match.
+  @senai @ui @db
   Scenario: verify book categories with DB
     Given the "librarian" on the home page
     When user navigates to "Books" page

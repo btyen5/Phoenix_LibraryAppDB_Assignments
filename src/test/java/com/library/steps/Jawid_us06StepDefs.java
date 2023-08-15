@@ -11,7 +11,8 @@ import org.junit.Assert;
 
 import java.util.Map;
 
-public class Jawid_us06StepDefs {
+public class
+Jawid_us06StepDefs {
 
         BookPage bookPage = new BookPage();
         LoginPage loginPage = new LoginPage();
